@@ -1,6 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System.Collections.Generic;
+using System.IO;
 
 namespace Mongame_Trying_to_do_Something.Scripts
 {
@@ -57,8 +58,10 @@ namespace Mongame_Trying_to_do_Something.Scripts
 
         private void LoadTextures()
         {
-            platformTexture = new Texture2D(graphicsDevice, 1, 1);
-            platformTexture.SetData(new Color[] { Color.Brown });
+            using (FileStream fileStream = new FileStream("Content/platform.png", FileMode.Open))
+            {
+                platformTexture = Texture2D.FromStream(graphicsDevice, fileStream);
+            }
 
             playerTexture = new Texture2D(graphicsDevice, 1, 1);
             playerTexture.SetData(new Color[] { Color.Purple });
@@ -66,8 +69,13 @@ namespace Mongame_Trying_to_do_Something.Scripts
             enemyTexture = new Texture2D(graphicsDevice, 1, 1);
             enemyTexture.SetData(new Color[] { Color.Red });
 
-            doorTexture = new Texture2D(graphicsDevice, 1, 1);
-            doorTexture.SetData(new Color[] { Color.Yellow });
+            // Carrega a textura da porta a partir de um arquivo PNG
+            using (FileStream fileStream = new FileStream("Content/door2.png", FileMode.Open))
+            {
+                doorTexture = Texture2D.FromStream(graphicsDevice, fileStream);
+            }
+
+
         }
 
         public void LoadLevel(int levelIndex)

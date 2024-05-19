@@ -15,7 +15,7 @@ namespace Mongame_Trying_to_do_Something.Scripts
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(Texture, Rectangle, Color.Yellow);  // Doors are yellow
+            spriteBatch.Draw(Texture, Rectangle, Color.White);  // Doors are yellow
         }
 
         public void SetTexture(Texture2D texture)
