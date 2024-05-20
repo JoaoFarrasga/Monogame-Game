@@ -7,7 +7,7 @@ namespace Mongame_Trying_to_do_Something.Scripts
 {
     public class Player : CollisionBox
     {
-        public Vector2 Position { get; set; }
+        public new Vector2 Position { get; set; }
         public Vector2 StartPosition { get; private set; }
         public Texture2D Texture { get; private set; }
         public bool IsOnGround { get; private set; }
@@ -18,6 +18,13 @@ namespace Mongame_Trying_to_do_Something.Scripts
         private float jumpCooldown = 0.5f; // Jump cooldown in seconds
         private float timeSinceLastJump = 0; // Time elapsed since last jump
 
+        private List<Rectangle> frames;
+        private int frameWidth;
+        private int frameHeight;
+        private int currentFrame;
+        private float frameTime;
+        private float timeElapsed;
+
         public Player(Rectangle rectangle, Texture2D texture)
             : base(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height)
         {
@@ -25,6 +32,7 @@ namespace Mongame_Trying_to_do_Something.Scripts
             StartPosition = Position;
             Texture = texture;
             IsOnGround = false;
+
         }
 
         public void Update(GameTime gameTime, Vector2 direction, bool isJumping, List<Platform> platforms, List<Coin> coins, ref int collectedCoins)

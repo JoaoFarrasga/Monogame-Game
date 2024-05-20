@@ -118,3 +118,7 @@ C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Somet
 C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\obj\Debug\net6.0-windows\Mongame Trying to do Something.pdb
 C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\obj\Debug\net6.0-windows\Mongame Trying to do Something.genruntimeconfig.cache
 C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\obj\Debug\net6.0-windows\ref\Mongame Trying to do Something.dll
+C:\Users\João Freitas\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\coin.xnb
+C:\Users\João Freitas\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\enemy.xnb
+C:\Users\João Freitas\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\enemy2.xnb
+C:\Users\João Freitas\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\Run.xnb

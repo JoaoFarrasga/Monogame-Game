@@ -62,6 +62,7 @@ namespace Mongame_Trying_to_do_Something
                 case GameState.Game:
                     gameStateManager.UpdateGame(gameTime);
                     camera.Update(platformManager.Player.Position); // Update camera position based on player position
+                    platformManager.Player.Update(gameTime, GetInputDirection(), IsJumping(), platformManager.Platforms, platformManager.Coins, ref platformManager.CollectedCoins);
 
                     if (platformManager.Player.Rectangle.Intersects(platformManager.Door.Rectangle))
                     {
@@ -74,6 +75,22 @@ namespace Mongame_Trying_to_do_Something
                     break;
             }
             base.Update(gameTime);
+        }
+
+
+        private Vector2 GetInputDirection()
+        {
+            Vector2 direction = Vector2.Zero;
+            if (Keyboard.GetState().IsKeyDown(Keys.Left))
+                direction.X = -1;
+            else if (Keyboard.GetState().IsKeyDown(Keys.Right))
+                direction.X = 1;
+            return direction;
+        }
+
+        private bool IsJumping()
+        {
+            return Keyboard.GetState().IsKeyDown(Keys.Space);
         }
 
         protected override void Draw(GameTime gameTime)

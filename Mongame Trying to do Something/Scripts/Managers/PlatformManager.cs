@@ -72,19 +72,25 @@ namespace Mongame_Trying_to_do_Something.Scripts
                 platformTexture = Texture2D.FromStream(graphicsDevice, fileStream);
             }
 
-            playerTexture = new Texture2D(graphicsDevice, 1, 1);
-            playerTexture.SetData(new Color[] { Color.Purple });
+            using (FileStream fileStream = new FileStream("Content/Run.png", FileMode.Open))
+            {
+                playerTexture = Texture2D.FromStream(graphicsDevice, fileStream);
+            }
 
-            enemyTexture = new Texture2D(graphicsDevice, 1, 1);
-            enemyTexture.SetData(new Color[] { Color.Red });
+            using (FileStream fileStream = new FileStream("Content/enemy.png", FileMode.Open))
+            {
+                enemyTexture = Texture2D.FromStream(graphicsDevice, fileStream);
+            }
 
             using (FileStream fileStream = new FileStream("Content/door2.png", FileMode.Open))
             {
                 doorTexture = Texture2D.FromStream(graphicsDevice, fileStream);
             }
 
-            coinTexture = new Texture2D(graphicsDevice, 1, 1);
-            coinTexture.SetData(new Color[] { Color.DarkBlue });
+            using (FileStream fileStream = new FileStream("Content/coin.png", FileMode.Open))
+            {
+                coinTexture = Texture2D.FromStream(graphicsDevice, fileStream);
+            }
         }
 
         public void LoadLevel(int levelIndex)

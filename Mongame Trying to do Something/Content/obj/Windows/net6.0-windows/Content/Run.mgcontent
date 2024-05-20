@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/João Freitas/Monogame-Game/Mongame Trying to do Something/Content/door.png</SourceFile>
-  <SourceTime>2024-05-19T20:01:40.7737019+01:00</SourceTime>
-  <DestFile>C:/Users/João Freitas/Monogame-Game/Mongame Trying to do Something/Content/bin/Windows/Content/door.xnb</DestFile>
-  <DestTime>2024-05-20T23:09:23.3455761+01:00</DestTime>
+  <SourceFile>C:/Users/João Freitas/Monogame-Game/Mongame Trying to do Something/Content/Run.png</SourceFile>
+  <SourceTime>2023-09-04T17:12:11.1335918+01:00</SourceTime>
+  <DestFile>C:/Users/João Freitas/Monogame-Game/Mongame Trying to do Something/Content/bin/Windows/Content/Run.xnb</DestFile>
+  <DestTime>2024-05-20T23:27:29.102739+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T12:44:56+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>
