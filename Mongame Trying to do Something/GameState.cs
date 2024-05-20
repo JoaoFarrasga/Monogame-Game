@@ -3,6 +3,7 @@
     public enum GameState
     {
         Menu,
-        Game
+        Game,
+        Victory
     }
 }

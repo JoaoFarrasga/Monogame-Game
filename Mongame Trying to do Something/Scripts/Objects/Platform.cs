@@ -1,7 +1,7 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Mongame_Trying_to_do_Something.Scripts
+namespace Mongame_Trying_to_do_Something.Scripts.Objects
 {
     public class Platform : CollisionBox
     {

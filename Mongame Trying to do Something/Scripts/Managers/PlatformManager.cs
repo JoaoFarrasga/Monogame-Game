@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Mongame_Trying_to_do_Something.Scripts.Objects;
 using System.Collections.Generic;
 using System.IO;
 
@@ -12,46 +13,54 @@ namespace Mongame_Trying_to_do_Something.Scripts
         public Player Player;
         public List<Enemy> Enemies;
         public Door Door;
+        public List<Coin> Coins;
+        public int CollectedCoins;
 
-        private Texture2D platformTexture, playerTexture, enemyTexture, doorTexture;
+        private Texture2D platformTexture, playerTexture, enemyTexture, doorTexture, coinTexture;
         private const int tileSize = 32;
 
         private string[][] levels = new string[][]
         {
             new string[]  // Level 1
             {
-                "XXXXXXXXXXXXXXXXXXXXXXXXX",
-                "X-----------------------X",
-                "X-------XXXX------------X",
-                "X---------------XXXXX---X",
-                "X----E------------------X",
-                "X--XXXX------------E----X",
-                "X----------------XXXX---X",
-                "X--------XXXXX----------X",
-                "X-P---------D-----------X",
-                "XXXXXXXXXXXXXXXXXXXXXXXXX"
+                "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+                "X-------------------------------------------X",
+                "X---------E---------------------------------X",
+                "X-------XXXX------D-----------------CC------X",
+                "X--------------XXXXXX------CC------XXXX-----X",
+                "X----------------------X--------------------X", 
+                "X----E--------------------XXXX--------------X",
+                "X--XXXX------------E-------------C----------X",
+                "X----------------XXXX-----------XXX----C----X",
+                "X--------XXXXX------------------------XXX---X",
+                "X-P------C---------CC----CC---------E-------X",
+                "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
             },
             new string[]  // Level 2
             {
                 "XXXXXXXXXXXXXXXXXXXXXXXXX",
-                "X-----------------------X",
-                "X-P-----XXXX------------X",
+                "X--------P--------------X",
+                "X-------XXXX------CC----X",
                 "X---------------XXXXX---X",
                 "X----E------------------X",
-                "X--XXXX-----------------X",
+                "X--XXXX-----------C-----X",
                 "X--------E------XXXX----X",
                 "X--------XXXXX----------X",
-                "X----------------D------X",
+                "X----------------D---C--X",
                 "XXXXXXXXXXXXXXXXXXXXXXXXX"
             }
         };
         private int currentLevelIndex = 0;
+        private Game1 game;
 
-        public PlatformManager(GraphicsDevice graphicsDevice)
+        public PlatformManager(GraphicsDevice graphicsDevice, Game1 game)
         {
             this.graphicsDevice = graphicsDevice;
+            this.game = game;
             Platforms = new List<Platform>();
             Enemies = new List<Enemy>();
+            Coins = new List<Coin>();
+            CollectedCoins = 0;
             LoadTextures();
             LoadLevel(currentLevelIndex);
         }
@@ -69,19 +78,21 @@ namespace Mongame_Trying_to_do_Something.Scripts
             enemyTexture = new Texture2D(graphicsDevice, 1, 1);
             enemyTexture.SetData(new Color[] { Color.Red });
 
-            // Carrega a textura da porta a partir de um arquivo PNG
             using (FileStream fileStream = new FileStream("Content/door2.png", FileMode.Open))
             {
                 doorTexture = Texture2D.FromStream(graphicsDevice, fileStream);
             }
 
-
+            coinTexture = new Texture2D(graphicsDevice, 1, 1);
+            coinTexture.SetData(new Color[] { Color.DarkBlue });
         }
 
         public void LoadLevel(int levelIndex)
         {
             Platforms.Clear();
             Enemies.Clear();
+            Coins.Clear();
+            CollectedCoins = 0;
             string[] levelMap = levels[levelIndex];
 
             for (int y = 0; y < levelMap.Length; y++)
@@ -104,12 +115,20 @@ namespace Mongame_Trying_to_do_Something.Scripts
                         case 'D':
                             Door = new Door(rect, doorTexture);
                             break;
+                        case 'C':
+                            Coins.Add(new Coin(rect, coinTexture));
+                            break;
                     }
                 }
             }
         }
 
-        public void SetTextures(Texture2D platformTexture, Texture2D playerTexture, Texture2D enemyTexture, Texture2D doorTexture)
+        public void ResetLevel()
+        {
+            LoadLevel(currentLevelIndex);
+        }
+
+        public void SetTextures(Texture2D platformTexture, Texture2D playerTexture, Texture2D enemyTexture, Texture2D doorTexture, Texture2D coinTexture)
         {
             foreach (var platform in Platforms)
                 platform.SetTexture(platformTexture);
@@ -117,16 +136,25 @@ namespace Mongame_Trying_to_do_Something.Scripts
             Player.SetTexture(playerTexture);
 
             foreach (var enemy in Enemies)
-                enemy.SetTexture(enemyTexture); // Assign the texture to each enemy
+                enemy.SetTexture(enemyTexture);
 
             Door.SetTexture(doorTexture);
 
+            foreach (var coin in Coins)
+                coin.SetTexture(coinTexture);
         }
 
         public void NextLevel()
         {
-            currentLevelIndex = (currentLevelIndex + 1) % levels.Length;
-            LoadLevel(currentLevelIndex);
+            if (currentLevelIndex < levels.Length - 1)
+            {
+                currentLevelIndex++;
+                LoadLevel(currentLevelIndex);
+            }
+            else
+            {
+                game.ChangeState(GameState.Victory); // Change to Victory state
+            }
         }
 
         public void DrawPlatforms(SpriteBatch spriteBatch)
@@ -146,11 +174,16 @@ namespace Mongame_Trying_to_do_Something.Scripts
                 enemy.Draw(spriteBatch);
         }
 
+        public void DrawCoins(SpriteBatch spriteBatch)
+        {
+            foreach (var coin in Coins)
+                coin.Draw(spriteBatch);
+        }
+
         public void DrawDoor(SpriteBatch spriteBatch)
         {
             if (Door != null)
                 Door.Draw(spriteBatch);
         }
-
     }
 }

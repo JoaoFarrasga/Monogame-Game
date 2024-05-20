@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using Mongame_Trying_to_do_Something.Scripts.Objects;
 using System.Collections.Generic;
 
 namespace Mongame_Trying_to_do_Something.Scripts
@@ -26,7 +27,7 @@ namespace Mongame_Trying_to_do_Something.Scripts
             IsOnGround = false;
         }
 
-        public void Update(GameTime gameTime, Vector2 direction, bool isJumping, List<Platform> platforms)
+        public void Update(GameTime gameTime, Vector2 direction, bool isJumping, List<Platform> platforms, List<Coin> coins, ref int collectedCoins)
         {
             // Update the jump timer
             if (timeSinceLastJump < jumpCooldown)
@@ -66,6 +67,16 @@ namespace Mongame_Trying_to_do_Something.Scripts
 
             Position = new Vector2(newX, newY);
             Rectangle = new Rectangle((int)Position.X, (int)Position.Y, Rectangle.Width, Rectangle.Height);
+
+            // Check for coin collection
+            for (int i = coins.Count - 1; i >= 0; i--)
+            {
+                if (Rectangle.Intersects(coins[i].Rectangle))
+                {
+                    coins.RemoveAt(i);
+                    collectedCoins++;
+                }
+            }
         }
 
         private bool CheckCollisions(Rectangle futureRect, List<Platform> platforms)

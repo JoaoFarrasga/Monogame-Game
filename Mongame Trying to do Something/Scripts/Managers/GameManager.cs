@@ -3,8 +3,9 @@ using Microsoft.Xna.Framework.Input;
 using System.Collections.Generic;
 
 using Mongame_Trying_to_do_Something.System;
+using Mongame_Trying_to_do_Something.Scripts.Objects;
 
-namespace Mongame_Trying_to_do_Something.Scripts
+namespace Mongame_Trying_to_do_Something.Scripts.Managers
 {
     public class GameStateManager
     {
@@ -23,13 +24,15 @@ namespace Mongame_Trying_to_do_Something.Scripts
         {
             Vector2 direction = inputManager.GetMovementDirection();
             bool isJumping = inputManager.IsJumping();
-            platformManager.Player.Update(gameTime, direction, isJumping, platformManager.Platforms);
+            platformManager.Player.Update(gameTime, direction, isJumping, platformManager.Platforms, platformManager.Coins, ref platformManager.CollectedCoins);
 
             List<Enemy> enemiesToRemove = new List<Enemy>();
 
-            // Check for collisions with enemies
+            // Update enemies and check for collisions with player
             foreach (var enemy in platformManager.Enemies)
             {
+                enemy.Update(gameTime, platformManager.Player, platformManager.Platforms);
+
                 if (platformManager.Player.Rectangle.Intersects(enemy.Rectangle))
                 {
                     // Check if the player's bottom is above the enemy's top and falling down
@@ -39,7 +42,7 @@ namespace Mongame_Trying_to_do_Something.Scripts
                     }
                     else
                     {
-                        platformManager.Player.ResetPosition();
+                        platformManager.ResetLevel();
                         break;
                     }
                 }

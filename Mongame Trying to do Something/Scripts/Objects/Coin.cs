@@ -1,13 +1,13 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace Mongame_Trying_to_do_Something.Scripts
+namespace Mongame_Trying_to_do_Something.Scripts.Objects
 {
-    public class Door : CollisionBox
+    public class Coin : CollisionBox
     {
         public Texture2D Texture { get; private set; }
 
-        public Door(Rectangle rectangle, Texture2D texture)
+        public Coin(Rectangle rectangle, Texture2D texture)
             : base(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height)
         {
             Texture = texture;
@@ -15,7 +15,7 @@ namespace Mongame_Trying_to_do_Something.Scripts
 
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(Texture, Rectangle, Color.White);  // Doors are yellow
+            spriteBatch.Draw(Texture, Rectangle, Color.White);
         }
 
         public void SetTexture(Texture2D texture)
