@@ -1,13 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Mongame Trying to do Something",
-    "\\Mongame Trying to do Something\\Content",
-    "\\Mongame Trying to do Something\\Scripts",
-    "\\Mongame Trying to do Something\\Scripts\\Managers",
-    "\\Mongame Trying to do Something\\Scripts\\Objects",
-    "\\Mongame Trying to do Something\\Scripts\\UI"
+    "\\Simple Platformer",
+    "\\Simple Platformer\\Scripts",
+    "\\Simple Platformer\\Scripts\\Objects"
   ],
-  "SelectedNode": "\\Mongame Trying to do Something\\Mongame Trying to do Something.sln",
+  "SelectedNode": "\\Simple Platformer\\Scripts\\Objects\\Player.cs",
   "PreviewInSolutionExplorer": false
 }

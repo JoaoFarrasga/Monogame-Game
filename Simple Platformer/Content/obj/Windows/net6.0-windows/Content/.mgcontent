@@ -4,15 +4,15 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Mongame Trying to do Something/Content/Background Music.mp3</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Mongame Trying to do Something/Content/Coin.mp3</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Mongame Trying to do Something/Content/Door.mp3</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Mongame Trying to do Something/Content/door.png</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Mongame Trying to do Something/Content/door2.png</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Mongame Trying to do Something/Content/File.spritefont</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Mongame Trying to do Something/Content/Jump.mp3</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Mongame Trying to do Something/Content/platform.png</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Mongame Trying to do Something/Content/Victory.mp3</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Background Music.mp3</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Coin.mp3</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Door.mp3</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/door.png</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/door2.png</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/File.spritefont</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Jump.mp3</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/platform.png</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Victory.mp3</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

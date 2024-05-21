@@ -7530,11 +7530,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\João Antunes\\Documents\\GitHub\\Monogame-Game\\Mongame Trying to do Something\\Mongame Trying to do Something.csproj",
+      "projectUniqueName": "C:\\Users\\João Antunes\\Documents\\GitHub\\Monogame-Game\\Simple Platformer\\Mongame Trying to do Something.csproj",
       "projectName": "Mongame Trying to do Something",
-      "projectPath": "C:\\Users\\João Antunes\\Documents\\GitHub\\Monogame-Game\\Mongame Trying to do Something\\Mongame Trying to do Something.csproj",
+      "projectPath": "C:\\Users\\João Antunes\\Documents\\GitHub\\Monogame-Game\\Simple Platformer\\Mongame Trying to do Something.csproj",
       "packagesPath": "C:\\Users\\João Antunes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\João Antunes\\Documents\\GitHub\\Monogame-Game\\Mongame Trying to do Something\\obj\\",
+      "outputPath": "C:\\Users\\João Antunes\\Documents\\GitHub\\Monogame-Game\\Simple Platformer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
