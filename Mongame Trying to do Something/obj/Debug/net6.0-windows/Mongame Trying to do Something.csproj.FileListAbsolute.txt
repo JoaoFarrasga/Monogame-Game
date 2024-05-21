@@ -118,3 +118,9 @@ C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Somet
 C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\obj\Debug\net6.0-windows\Mongame Trying to do Something.pdb
 C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\obj\Debug\net6.0-windows\Mongame Trying to do Something.genruntimeconfig.cache
 C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\obj\Debug\net6.0-windows\ref\Mongame Trying to do Something.dll
+C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\Background Music.wma
+C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\Background Music.xnb
+C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\Jump.xnb
+C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\Victory.xnb
+C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\Door_Sound.xnb
+C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\Coin.xnb

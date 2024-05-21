@@ -13,6 +13,24 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin Background Music.mp3
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Background Music.mp3
+
+#begin Coin.mp3
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Coin.mp3
+
+#begin Door.mp3
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Door.mp3;Door_Sound.mp3
+
 #begin door.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -44,6 +62,12 @@
 /processorParam:TextureFormat=Compressed
 /build:File.spritefont;Text.spritefont
 
+#begin Jump.mp3
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Jump.mp3
+
 #begin platform.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -55,4 +79,10 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:platform.png
+
+#begin Victory.mp3
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:Victory.mp3
 
