@@ -124,3 +124,6 @@ C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Somet
 C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\Victory.xnb
 C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\Door_Sound.xnb
 C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\Coin.xnb
+C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\enemy.xnb
+C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\enemy2.xnb
+C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Mongame Trying to do Something\bin\Debug\net6.0-windows\Content\Run.xnb
