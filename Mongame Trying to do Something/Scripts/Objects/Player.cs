@@ -25,6 +25,14 @@ namespace Mongame_Trying_to_do_Something.Scripts
 
         //Construtor da classe Player que inicializa o jogador com um retângulo, uma textura e um som de salto
         public Player(Rectangle rectangle, Texture2D texture, SoundEffectInstance jumpSound)
+        private List<Rectangle> frames;
+        private int frameWidth;
+        private int frameHeight;
+        private int currentFrame;
+        private float frameTime;
+        private float timeElapsed;
+
+        public Player(Rectangle rectangle, Texture2D texture)
             : base(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height)
         {
             Position = new Vector2(rectangle.X, rectangle.Y);
