@@ -114,7 +114,7 @@ namespace Mongame_Trying_to_do_Something.Scripts
                 platformTexture = Texture2D.FromStream(graphicsDevice, fileStream);
             }
 
-            using (FileStream fileStream = new FileStream("Content/Run.png", FileMode.Open))
+            using (FileStream fileStream = new FileStream("Content/player.png", FileMode.Open))
             {
                 playerTexture = Texture2D.FromStream(graphicsDevice, fileStream);
             }

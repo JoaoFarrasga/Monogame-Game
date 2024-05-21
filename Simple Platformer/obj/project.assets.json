@@ -7524,23 +7524,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\João Antunes\\.nuget\\packages\\": {},
+    "C:\\Users\\João Freitas\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\João Antunes\\Documents\\GitHub\\Monogame-Game\\Mongame Trying to do Something\\Mongame Trying to do Something.csproj",
+      "projectUniqueName": "C:\\Users\\João Freitas\\Monogame-Game\\Simple Platformer\\Mongame Trying to do Something.csproj",
       "projectName": "Mongame Trying to do Something",
-      "projectPath": "C:\\Users\\João Antunes\\Documents\\GitHub\\Monogame-Game\\Mongame Trying to do Something\\Mongame Trying to do Something.csproj",
-      "packagesPath": "C:\\Users\\João Antunes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\João Antunes\\Documents\\GitHub\\Monogame-Game\\Mongame Trying to do Something\\obj\\",
+      "projectPath": "C:\\Users\\João Freitas\\Monogame-Game\\Simple Platformer\\Mongame Trying to do Something.csproj",
+      "packagesPath": "C:\\Users\\João Freitas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\João Freitas\\Monogame-Game\\Simple Platformer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\João Antunes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\João Freitas\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7549,7 +7549,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7596,7 +7595,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
