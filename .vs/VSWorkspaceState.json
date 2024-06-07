@@ -3,8 +3,9 @@
     "",
     "\\Simple Platformer",
     "\\Simple Platformer\\Scripts",
+    "\\Simple Platformer\\Scripts\\Managers",
     "\\Simple Platformer\\Scripts\\Objects"
   ],
-  "SelectedNode": "\\Simple Platformer\\Scripts\\Objects\\Player.cs",
+  "SelectedNode": "\\Simple Platformer\\Scripts\\Managers\\PlatformManager.cs",
   "PreviewInSolutionExplorer": false
 }

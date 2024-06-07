@@ -20,12 +20,14 @@ namespace Mongame_Trying_to_do_Something
         Camera2D camera;
         SpriteFont font;
 
+        private Texture2D backgroundTexture;
+
         private SoundEffect backgroundMusic;
         private SoundEffect jumpSound;
         private SoundEffect doorSound;
         private SoundEffect winSound;
         private SoundEffect coinSound;
-        
+
         private SoundEffectInstance backgroundMusicInstance;
         private SoundEffectInstance jumpSoundInstance;
         private SoundEffectInstance doorSoundInstance;
@@ -44,8 +46,8 @@ namespace Mongame_Trying_to_do_Something
         //Inicializa o Jogo
         protected override void Initialize()
         {
-            //Crias as instancias que vão ser usadas no Jogo
-            platformManager = new PlatformManager(GraphicsDevice, this);
+            // Pass the Content property to the PlatformManager
+            platformManager = new PlatformManager(GraphicsDevice, Content, this);
             inputManager = new InputManager();
             gameStateManager = new GameStateManager(this, platformManager, inputManager);
             camera = new Camera2D(GraphicsDevice.Viewport);
@@ -57,36 +59,40 @@ namespace Mongame_Trying_to_do_Something
         protected override void LoadContent()
         {
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            font = Content.Load<SpriteFont>("Text"); //Carrega a Fonte para os Menus
+            font = Content.Load<SpriteFont>("Text"); // Carrega a Fonte para os Menus
 
-            //Carrega a Musica de Fundo
+            // Carrega a Musica de Fundo
             backgroundMusic = Content.Load<SoundEffect>("Background Music");
             backgroundMusicInstance = backgroundMusic.CreateInstance();
             backgroundMusicInstance.IsLooped = true; // Poe a Musica em Loop
             backgroundMusicInstance.Volume = 0.01f; // Poe o Volume da Musica a 1%
             backgroundMusicInstance.Play(); // Poe a Musica a dar
 
-            //Carrega os Efeitos Sonoros
-            jumpSound = Content.Load<SoundEffect>("Jump"); //Som para o Salto
+            // Carrega os Efeitos Sonoros
+            jumpSound = Content.Load<SoundEffect>("Jump"); // Som para o Salto
             jumpSoundInstance = jumpSound.CreateInstance();
             jumpSoundInstance.Volume = 0.01f;
 
-            doorSound = Content.Load<SoundEffect>("Door_Sound"); //Som para a Porta
+            doorSound = Content.Load<SoundEffect>("Door_Sound"); // Som para a Porta
             doorSoundInstance = doorSound.CreateInstance();
             doorSoundInstance.Volume = 0.01f;
 
-            winSound = Content.Load<SoundEffect>("Victory"); //Som para a Vitoria
+            winSound = Content.Load<SoundEffect>("Victory"); // Som para a Vitoria
             winSoundInstance = winSound.CreateInstance();
             winSoundInstance.Volume = 0.01f;
 
-            coinSound = Content.Load<SoundEffect>("Coin"); //Som para a Moeda
+            coinSound = Content.Load<SoundEffect>("Coin"); // Som para a Moeda
             coinSoundInstance = coinSound.CreateInstance();
             coinSoundInstance.Volume = 0.01f;
 
-            //Poe os Efeitos Sonoros para o Platform Manager
-            platformManager.addJumpSound(jumpSoundInstance); 
+            // Poe os Efeitos Sonoros para o Platform Manager
+            platformManager.addJumpSound(jumpSoundInstance);
             platformManager.addCoinSound(coinSoundInstance);
+
+            // Load the background texture
+            backgroundTexture = Content.Load<Texture2D>("Background");
         }
+
 
         //Change State muda o Estado do Jogo para o Estado desejado
         public void ChangeState(GameState newState)
@@ -133,24 +139,29 @@ namespace Mongame_Trying_to_do_Something
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
-            //Começa o SpriteBatch com a Camara
+            // Começa o SpriteBatch sem a Camara para desenhar o background
+            spriteBatch.Begin();
+            spriteBatch.Draw(backgroundTexture, GraphicsDevice.Viewport.Bounds, Color.White);
+            spriteBatch.End();
+
+            // Começa o SpriteBatch com a Camara para desenhar os elementos do jogo
             spriteBatch.Begin(transformMatrix: camera.GetViewMatrix());
 
             switch (gameState)
             {
-                //Renderiza a String do Menu
+                // Renderiza a String do Menu
                 case GameState.Menu:
                     spriteBatch.DrawString(font, "Simple Platformer\nPress Space to Play", new Vector2(-50, 0), Color.White);
                     break;
-                //Renderiza o que é Preciso do Jogo
+                // Renderiza o que é Preciso do Jogo
                 case GameState.Game:
-                    platformManager.DrawPlatforms(spriteBatch); //Rederiza as Plataformas
-                    platformManager.DrawPlayer(spriteBatch); //Renderiza o Jogador
-                    platformManager.DrawEnemies(spriteBatch); //Renderiza os Inimigos
-                    platformManager.DrawDoor(spriteBatch); //Renderiza a Porta
-                    platformManager.DrawCoins(spriteBatch); //Renderiza as Moedas
+                    platformManager.DrawPlatforms(spriteBatch); // Renderiza as Plataformas
+                    platformManager.DrawPlayer(spriteBatch); // Renderiza o Jogador
+                    platformManager.DrawEnemies(spriteBatch); // Renderiza os Inimigos
+                    platformManager.DrawDoor(spriteBatch); // Renderiza a Porta
+                    platformManager.DrawCoins(spriteBatch); // Renderiza as Moedas
                     break;
-                //Renderiza as Strings da Vitoria
+                // Renderiza as Strings da Vitoria
                 case GameState.Victory:
                     winSound.Play();
                     spriteBatch.DrawString(font, "You Won! Good Job\nPress Space to go to the Menu", new Vector2(200, 0), Color.White);
@@ -159,9 +170,9 @@ namespace Mongame_Trying_to_do_Something
                     break;
             }
 
-            spriteBatch.End(); //Acaba a SpriteBatch
+            spriteBatch.End(); // Acaba a SpriteBatch
 
-            //Renderiza o UI, no caso só as coins
+            // Renderiza o UI, no caso só as coins
             spriteBatch.Begin();
             if (gameState == GameState.Game)
             {

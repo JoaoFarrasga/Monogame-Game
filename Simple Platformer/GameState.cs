@@ -5,6 +5,7 @@
     {
         Menu,    //Estado do jogo quando está no menu
         Game,    //Estado do jogo durante o jogo
-        Victory  //Estado do jogo quando o jogador ganha
+        Victory,  //Estado do jogo quando o jogador ganha
+        Pause
     }
 }

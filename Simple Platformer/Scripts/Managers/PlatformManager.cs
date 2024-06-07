@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Mongame_Trying_to_do_Something.Scripts.Objects;
 using System.Collections.Generic;
@@ -11,6 +12,8 @@ namespace Mongame_Trying_to_do_Something.Scripts
     public class PlatformManager
     {
         private GraphicsDevice graphicsDevice;
+        private ContentManager content;
+
         public List<Platform> Platforms;
         public Player Player;
         public List<Enemy> Enemies;
@@ -24,7 +27,7 @@ namespace Mongame_Trying_to_do_Something.Scripts
         public int EnemyKilled { get; private set; }
 
         private Texture2D platformTexture, playerTexture, enemyTexture, doorTexture, coinTexture;
-        private const int tileSize = 32;
+        private const int tileSize = 64;
 
         private string[][] levels = new string[][]
         {
@@ -93,9 +96,10 @@ namespace Mongame_Trying_to_do_Something.Scripts
         private Game1 game;
 
         //Construtor que inicializa o PlatformManager
-        public PlatformManager(GraphicsDevice graphicsDevice, Game1 game)
+        public PlatformManager(GraphicsDevice graphicsDevice, ContentManager content, Game1 game)
         {
             this.graphicsDevice = graphicsDevice;
+            this.content = content; // Add this line
             this.game = game;
             Platforms = new List<Platform>();
             Enemies = new List<Enemy>();
@@ -109,30 +113,11 @@ namespace Mongame_Trying_to_do_Something.Scripts
         //Carrega as texturas a partir dos ficheiros
         private void LoadTextures()
         {
-            using (FileStream fileStream = new FileStream("Content/platform.png", FileMode.Open))
-            {
-                platformTexture = Texture2D.FromStream(graphicsDevice, fileStream);
-            }
-
-            using (FileStream fileStream = new FileStream("Content/player.png", FileMode.Open))
-            {
-                playerTexture = Texture2D.FromStream(graphicsDevice, fileStream);
-            }
-
-            using (FileStream fileStream = new FileStream("Content/enemy.png", FileMode.Open))
-            {
-                enemyTexture = Texture2D.FromStream(graphicsDevice, fileStream);
-            }
-
-            using (FileStream fileStream = new FileStream("Content/door2.png", FileMode.Open))
-            {
-                doorTexture = Texture2D.FromStream(graphicsDevice, fileStream);
-            }
-
-            using (FileStream fileStream = new FileStream("Content/coin.png", FileMode.Open))
-            {
-                coinTexture = Texture2D.FromStream(graphicsDevice, fileStream);
-            }
+            platformTexture = content.Load<Texture2D>("platform");
+            playerTexture = content.Load<Texture2D>("Player-Sheet"); // Load the sprite sheet
+            enemyTexture = content.Load<Texture2D>("Enemy-Run");
+            doorTexture = content.Load<Texture2D>("door");
+            coinTexture = content.Load<Texture2D>("coinTex");
         }
 
         //Carrega um nível específico

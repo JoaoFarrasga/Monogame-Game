@@ -12,15 +12,34 @@ namespace Mongame_Trying_to_do_Something.Scripts.Objects
 
         //Velocidade e gravidade do inimigo
         private Vector2 velocity;
-        private float gravity = 0.35f;
-        private float speed = 1.5f;
+        private float gravity = 0.7f;
+        private float speed = 3.0f;
+
+        private List<Rectangle> frames;
+        private int frameWidth;
+        private int frameHeight;
+        private int currentFrame;
+        private float frameTime;
+        private float timeElapsed;
 
         //Construtor da classe Enemy que inicializa o inimigo com um retângulo e uma textura
         public Enemy(Rectangle rectangle, Texture2D texture)
-            : base(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height)
+    : base(rectangle.X, rectangle.Y, rectangle.Width, rectangle.Height)
         {
             Texture = texture;
             velocity = Vector2.Zero;
+
+            // Initialize animation fields
+            frameWidth = texture.Width / 8; // assuming 4 frames in a row
+            frameHeight = texture.Height;
+            frames = new List<Rectangle>();
+            for (int i = 0; i < 8; i++)
+            {
+                frames.Add(new Rectangle(i * frameWidth, 0, frameWidth, frameHeight));
+            }
+            currentFrame = 0;
+            frameTime = 0.1f; // 10 frames per second
+            timeElapsed = 0;
         }
 
         //Método que atualiza o estado do inimigo
@@ -28,7 +47,7 @@ namespace Mongame_Trying_to_do_Something.Scripts.Objects
         {
             Vector2 direction = Vector2.Zero;
 
-            //Define a direção do movimento do inimigo baseado na posição do jogador
+            // Define the direction of enemy movement based on player's position
             if (player.Position.X > Position.X)
             {
                 direction.X = 1;
@@ -38,22 +57,37 @@ namespace Mongame_Trying_to_do_Something.Scripts.Objects
                 direction.X = -1;
             }
 
-            //Calcula a nova posição do inimigo
+            // Handle animation
+            if (direction.X != 0)
+            {
+                timeElapsed += (float)gameTime.ElapsedGameTime.TotalSeconds;
+                if (timeElapsed > frameTime)
+                {
+                    currentFrame = (currentFrame + 1) % frames.Count;
+                    timeElapsed -= frameTime;
+                }
+            }
+            else
+            {
+                currentFrame = 0; // Reset to the first frame when idle
+            }
+
+            // Calculate new position
             float newX = Position.X + direction.X * speed;
             float newY = Position.Y;
 
-            //Aplica a gravidade à velocidade vertical
+            // Apply gravity to vertical velocity
             velocity.Y += gravity;
             newY += velocity.Y;
 
-            //Verifica colisões horizontais
+            // Check horizontal collisions
             Rectangle futureHorizontalRect = new Rectangle((int)newX, (int)Position.Y, Rectangle.Width, Rectangle.Height);
             if (CheckCollisions(futureHorizontalRect, platforms))
             {
                 newX = Position.X;
             }
 
-            //Verifica colisões verticais
+            // Check vertical collisions
             Rectangle futureVerticalRect = new Rectangle((int)Position.X, (int)newY, Rectangle.Width, Rectangle.Height);
             if (CheckCollisions(futureVerticalRect, platforms))
             {
@@ -61,9 +95,10 @@ namespace Mongame_Trying_to_do_Something.Scripts.Objects
                 velocity.Y = 0;
             }
 
-            //Atualiza a posição do inimigo
+            // Update enemy position
             Position = new Vector2(newX, newY);
         }
+
 
         //Método que verifica colisões com as plataformas
         private bool CheckCollisions(Rectangle futureRect, List<Platform> platforms)
@@ -81,7 +116,7 @@ namespace Mongame_Trying_to_do_Something.Scripts.Objects
         //Método para renderizar o inimigo na tela
         public void Draw(SpriteBatch spriteBatch)
         {
-            spriteBatch.Draw(Texture, Rectangle, Color.White); //Usa o retângulo definido na classe base
+            spriteBatch.Draw(Texture, Rectangle, frames[currentFrame], Color.White);
         }
 
         //Método para definir uma nova textura para o inimigo
