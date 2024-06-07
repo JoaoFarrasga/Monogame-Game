@@ -178,59 +178,54 @@ C:\Users\João Freitas\Monogame-Game\Simple Platformer\obj\Debug\net6.0-windows\
 C:\Users\João Freitas\Monogame-Game\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.genruntimeconfig.cache
 C:\Users\João Freitas\Monogame-Game\Simple Platformer\obj\Debug\net6.0-windows\ref\Mongame Trying to do Something.dll
 C:\Users\João Freitas\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\player.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\Background Music.wma
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\coin.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\door.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\enemy.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\enemy2.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\platform.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\Run.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\Background Music.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\Door_Sound.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\Jump.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\Text.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\Victory.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Mongame Trying to do Something.exe
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Mongame Trying to do Something.deps.json
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Mongame Trying to do Something.runtimeconfig.json
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Mongame Trying to do Something.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Mongame Trying to do Something.pdb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\MonoGame.Framework.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.XInput.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.csproj.AssemblyReference.cache
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.AssemblyInfoInputs.cache
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.AssemblyInfo.cs
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.csproj.CoreCompileInputs.cache
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.csproj.CopyComplete
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\obj\Debug\net6.0-windows\refint\Mongame Trying to do Something.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.pdb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.genruntimeconfig.cache
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\obj\Debug\net6.0-windows\ref\Mongame Trying to do Something.dll
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\Player-Sheet.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\coinTex.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\Background.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\Enemy-Run.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\Game Over.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\Mian Menu.xnb
-C:\Users\João Antunes\Documents\GitHub\Monogame-Game\Simple Platformer\bin\Debug\net6.0-windows\Content\Pause.xnb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Content\Background Music.wma
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Content\enemy.xnb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Content\enemy2.xnb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Content\Run.xnb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Content\Background Music.xnb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Content\coin.xnb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Content\door.xnb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Content\door2.xnb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Content\Door_Sound.xnb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Content\Jump.xnb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Content\platform.xnb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Content\player.xnb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Content\Text.xnb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Content\Victory.xnb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Mongame Trying to do Something.exe
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Mongame Trying to do Something.deps.json
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Mongame Trying to do Something.runtimeconfig.json
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Mongame Trying to do Something.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Mongame Trying to do Something.pdb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\MonoGame.Framework.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.Direct2D1.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.Direct3D11.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.Direct3D9.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.DXGI.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.Mathematics.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.MediaFoundation.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.XAudio2.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\SharpDX.XInput.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\runtimes\debian-x64\native\libuv.so
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\runtimes\fedora-x64\native\libuv.so
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\runtimes\opensuse-x64\native\libuv.so
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\runtimes\osx\native\libuv.dylib
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\runtimes\rhel-x64\native\libuv.so
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\runtimes\win7-arm\native\libuv.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\runtimes\win7-x64\native\libuv.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.csproj.AssemblyReference.cache
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.AssemblyInfoInputs.cache
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.AssemblyInfo.cs
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.csproj.CoreCompileInputs.cache
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.csproj.CopyComplete
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\obj\Debug\net6.0-windows\refint\Mongame Trying to do Something.dll
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.pdb
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\obj\Debug\net6.0-windows\Mongame Trying to do Something.genruntimeconfig.cache
+C:\Users\João Antunes\Documents\GitHub\Things\Monogame-Game2\Simple Platformer\obj\Debug\net6.0-windows\ref\Mongame Trying to do Something.dll

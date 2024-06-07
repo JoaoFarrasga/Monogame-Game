@@ -4,34 +4,24 @@
   <Platform>Windows</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Background Music.mp3</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Background.png</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Coin.mp3</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/coinTex.png</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Door.mp3</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/door.png</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Enemy-Run.png</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/File.spritefont</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Game Over.png</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Jump.mp3</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Mian Menu.png</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Pause.png</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/platform.png</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Player-Sheet.png</File>
-    <File>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/Victory.mp3</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Things/Monogame-Game2/Simple Platformer/Content/Background Music.mp3</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Things/Monogame-Game2/Simple Platformer/Content/Coin.mp3</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Things/Monogame-Game2/Simple Platformer/Content/Door.mp3</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Things/Monogame-Game2/Simple Platformer/Content/door.png</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Things/Monogame-Game2/Simple Platformer/Content/door2.png</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Things/Monogame-Game2/Simple Platformer/Content/File.spritefont</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Things/Monogame-Game2/Simple Platformer/Content/Jump.mp3</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Things/Monogame-Game2/Simple Platformer/Content/platform.png</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Things/Monogame-Game2/Simple Platformer/Content/player.png</File>
+    <File>C:/Users/João Antunes/Documents/GitHub/Things/Monogame-Game2/Simple Platformer/Content/Victory.mp3</File>
   </SourceFiles>
   <DestFiles>
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File>Door_Sound.mp3</File>
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File>Text.spritefont</File>
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
-    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

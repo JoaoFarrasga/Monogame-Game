@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <SourceFile>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/door.png</SourceFile>
-  <SourceTime>2024-05-20T15:03:32.0016021+01:00</SourceTime>
-  <DestFile>C:/Users/João Antunes/Documents/GitHub/Monogame-Game/Simple Platformer/Content/bin/Windows/Content/door.xnb</DestFile>
-  <DestTime>2024-06-07T19:34:26.868692+01:00</DestTime>
+  <SourceFile>C:/Users/João Antunes/Documents/GitHub/Things/Monogame-Game2/Simple Platformer/Content/door.png</SourceFile>
+  <SourceTime>2024-05-31T17:30:24.4375231+01:00</SourceTime>
+  <DestFile>C:/Users/João Antunes/Documents/GitHub/Things/Monogame-Game2/Simple Platformer/Content/bin/Windows/Content/door.xnb</DestFile>
+  <DestTime>2024-05-31T17:31:05.1270947+01:00</DestTime>
   <Importer>TextureImporter</Importer>
   <ImporterTime>2022-07-26T12:44:56+01:00</ImporterTime>
   <Processor>TextureProcessor</Processor>

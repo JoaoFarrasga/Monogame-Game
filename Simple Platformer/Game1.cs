@@ -79,7 +79,7 @@ namespace Mongame_Trying_to_do_Something
 
             winSound = Content.Load<SoundEffect>("Victory"); // Som para a Vitoria
             winSoundInstance = winSound.CreateInstance();
-            winSoundInstance.Volume = 0.01f;
+            winSoundInstance.Volume = 0.001f;
 
             coinSound = Content.Load<SoundEffect>("Coin"); // Som para a Moeda
             coinSoundInstance = coinSound.CreateInstance();
